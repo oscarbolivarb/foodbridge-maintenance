@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Alicia",
+    "role": "driver",
+    "active": true,
+    "coverage": ["48205", "48206"],
+    "assigned_today": 0
+  },
+  {
+    "name": "Marcus",
+    "role": "driver",
+    "active": true,
+    "coverage": ["48207"],
+    "assigned_today": 2
+  },
+  {
+    "name": "Dana",
+    "role": "warehouse",
+    "active": true,
+    "coverage": [],
+    "assigned_today": 0
+  }
+]

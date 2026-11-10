@@ -1,0 +1,11 @@
+DB_HOST = "localhost"
+DB_NAME = "foodbridge"
+DB_USER = "admin"
+DB_PASSWORD = "password123"
+SMTP_SERVER = "mail.local"
+SMTP_PORT = 25
+DEFAULT_SENDER = "noreply@foodbridge.local"
+ADMIN_ALERT_EMAIL = "ops@foodbridge.local"
+REPORT_OUTPUT = "./data/daily_report.txt"
+MAX_ROUTE_STOPS = 12
+ENABLE_SMS = True

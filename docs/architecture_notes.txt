@@ -1,0 +1,5 @@
+FoodBridge was originally built by volunteers and later modified by different contractors.
+Some business rules are duplicated across services.
+There is no automated testing in the current environment.
+The notification workflow may be replaced next year.
+The nonprofit wants better documentation before transitioning to a new technology partner.

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 101,
+    "family_name": "Jackson",
+    "zip_code": "48205",
+    "household_size": 5,
+    "needs_baby_items": false,
+    "needs_hygiene": true,
+    "status": "new",
+    "email": "jackson@example.org",
+    "phone": "5551112222"
+  },
+  {
+    "id": 102,
+    "family_name": "Nguyen",
+    "zip_code": "48206",
+    "household_size": 2,
+    "needs_baby_items": true,
+    "needs_hygiene": false,
+    "status": "new",
+    "email": "nguyen@example.org",
+    "phone": "5553334444"
+  },
+  {
+    "id": 103,
+    "family_name": "Carter",
+    "zip_code": "48205",
+    "household_size": 0,
+    "needs_baby_items": false,
+    "needs_hygiene": false,
+    "status": "new",
+    "email": "carter@example.org",
+    "phone": ""
+  }
+]

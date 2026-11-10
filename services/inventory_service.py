@@ -1,4 +1,4 @@
-import json
+﻿import json
 
 
 class InventoryService:
@@ -10,12 +10,15 @@ class InventoryService:
         with open("data/inventory.json", "w") as f:
             json.dump(inventory, f, indent=2)
 
-    def can_fulfill(self, request, inventory):
+    def _required_food_boxes(self, request):
         needed_boxes = 1
         if request.get("household_size", 0) >= 4:
             needed_boxes = 2
         if request.get("household_size", 0) >= 7:
             needed_boxes = 3
+        return needed_boxes
+    def can_fulfill(self, request, inventory):
+        needed_boxes = self._required_food_boxes(request)
 
         if inventory.get("food_box", 0) < needed_boxes:
             return False
@@ -26,11 +29,8 @@ class InventoryService:
         return True
 
     def reserve_items(self, request, inventory):
-        needed_boxes = 1
-        if request.get("household_size", 0) >= 4:
-            needed_boxes = 2
-        if request.get("household_size", 0) >= 7:
-            needed_boxes = 3
+        needed_boxes = self._required_food_boxes(request)
+
         inventory["food_box"] = inventory.get("food_box", 0) - needed_boxes
         if request.get("needs_baby_items"):
             inventory["baby_kit"] = inventory.get("baby_kit", 0) - 1
@@ -44,3 +44,5 @@ class InventoryService:
             print("Low baby kit inventory")
         if inventory.get("hygiene_kit", 0) < 4:
             print("Low hygiene inventory")
+
+

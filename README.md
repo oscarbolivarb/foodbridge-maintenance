@@ -16,3 +16,8 @@ This codebase is intentionally imperfect for course analysis. It includes techni
 - Not all files are fully wired together.
 - Some configuration values are hardcoded.
 - Automated tests are not included.
+ 
+## Documentation
+- [Developer Guide](docs/developer_guide.md)
+- [User Guide](docs/user_guide.md)
+- [Coding Standards](docs/coding_standards.md)
